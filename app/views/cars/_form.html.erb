@@ -1,0 +1,18 @@
+<%= form_for @car do |f| %>
+
+	Owner: <br>
+	<%= f.text_field :owner, placeholder: current_user.name %> <br>
+	Make: <br>
+	<%= f.text_field :make %> <br>
+	Model: <br>
+	<%= f.text_field :model %> <br>
+	Year: <br>
+	<%= f.number_field :year %> <br>
+	Color: <br>
+	<%= f.text_field :color %> <br>
+	Odometer: <br>
+	<%= f.number_field :odometer %> <br>
+
+	<%= f.submit 'Add car', class: 'btn btn-primary' %>
+
+	<% end %>
