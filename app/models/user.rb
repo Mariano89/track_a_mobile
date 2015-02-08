@@ -1,9 +1,9 @@
 class User < ActiveRecord::Base
-
-	# has_many :cars
+	include ActiveModel::SecurePassword
+	has_many :cars
 
 	has_secure_password
 
-	validates :email
-	validates :password, confirmatino: true
+	validates :email, uniqueness: true
+	validates :password, confirmation: true
 end
