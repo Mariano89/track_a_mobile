@@ -4,6 +4,8 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
+					# *** creates new user at sign up *** 
+
 	def create
 		@user = User.new (params.require(:user).permit(:name, :email, :password, :password_confirmation))
 
