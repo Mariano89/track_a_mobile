@@ -1,0 +1,11 @@
+	<!-- ** Log in new page ** -->
+
+<h1>Log in</h1>
+
+<%= form_for :user, url: '/login' do |f| %>
+
+	Email: <%= f.text_field :email %> <br>
+	Password: <%= f.password_field :password %> <br>
+	<%= f.submit "Log In" %>
+
+	<% end %>
