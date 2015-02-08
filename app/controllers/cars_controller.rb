@@ -1,8 +1,8 @@
 class CarsController < ApplicationController
 
-	# def index
-	# 	@cars = Cars.all
-	# end
+	def index
+		@cars = Car.all
+	end
 
 	def show
 		@car = Car.find(params[:id])
@@ -51,5 +51,5 @@ class CarsController < ApplicationController
 	def car_params
 		params.require(:car).permit(:owner, :make, :model, :year, :color, :odometer)
 	end
-	
+
 end
