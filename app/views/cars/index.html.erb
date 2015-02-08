@@ -25,6 +25,8 @@
 				<td><%= c.year %></td>
 				<td><%= c.color %></td>
 				<td><%= c.odometer %></td>
+				<td><%= link_to 'Edit', edit_car_path(c) %>| 
+						<%= link_to 'X', c, method: :delete %> </td>
 			</tr>
 
 	<% end %>
