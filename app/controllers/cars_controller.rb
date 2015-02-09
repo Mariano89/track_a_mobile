@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
 
-	# before_action :authorize
+	before_action :authorize, :except => [:index, :show, :new, :create]
 
 	def index
 		@cars = Car.all
