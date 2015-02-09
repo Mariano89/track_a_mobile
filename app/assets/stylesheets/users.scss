@@ -1,3 +1,15 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.signup-bg {
+	background-image: url('http://www.flixxy.com/multi-million-dollar-dream-garage-image10.jpg');
+	background-size: 1438px 900px;
+}
+
+.signup-container {
+	width: 200px;
+	height: 350px;
+	background-color: #6e94d3;
+	border-radius: 20px;
+	opacity: 0.95;
+}

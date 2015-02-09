@@ -1,9 +1,15 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body.login_bg {
+	background-image: url('https://channel4cars.files.wordpress.com/2014/01/dream-garage.jpg');
+	background-repeat: no-repeat;
+	background-size: 1438px 900px;
+}
+
 .log-in-container {
 	width: 200px;
-	height: 250px;
+	height: 259px;
 	background-color: #6e94d3;
 	border-radius: 20px;
 	opacity: 0.95;

@@ -1,28 +1,33 @@
 <!-- ** Sign up new page ** -->
 
+<div class="col-md-1"></div>
 
-<h1>Sign up</h1>
-<br>
+<body class="signup-bg">
 
-<%= form_for @user do |f| %>
+	<div class="signup-container white-txt col-md-2">
+		<h1 class="text-center">Sign up</h1>
+		<br>
 
-	Name: <br>
-	<%= f.text_field :name %> <br>
+		<%= form_for @user do |f| %>
 
-	Email: <br>
-	<%= f.text_field :email %> <br>
+			<strong>Name: </strong>
+			<%= f.text_field :name, class: 'form-control' %>
 
-	Password: <br>
-	<%= f.password_field :password %> <br>
+			<strong>Email: </strong>
+			<%= f.text_field :email, class: 'form-control' %>
 
-	Confirm Password: <br>
-	<%= f.password_field :password_confirmation %><br>
-	
-	<%= f.submit "Sign Up" %>
+			<strong>Password: </strong><br>
+			<%= f.password_field :password, class: 'form-control' %>
 
-<% end %>
+			<strong>Confirm Password: </strong>
+			<%= f.password_field :password_confirmation, class: 'form-control' %>
+			<br>
+			<%= f.submit "Sign Up", class: 'btn btn-info center-block' %>
 
-	
+		<% end %>
+	</div>
+
+</body>
 
 
 

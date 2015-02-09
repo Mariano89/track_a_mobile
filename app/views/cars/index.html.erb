@@ -1,11 +1,12 @@
 
 <body>
-
+<div class="col-md-2">
 	<h1>Garage</h1>
 	<br>
 	<h3><%= link_to 'Add New Vehicle', new_car_path, class: 'btn btn-success' %></h3>
 	<br>
-
+</div>
+	<div class="col-md-9">
 	<table class="table table-hover col-md-10">
 
 		<thead>
@@ -26,12 +27,12 @@
 					<td><%= c.year %></td>
 					<td><%= c.color %></td>
 					<td><%= c.odometer %></td>
-					<td><%= link_to 'Edit', edit_car_path(c), class: "btn btn-default" %> 
+					<td><%= link_to 'Edit', edit_car_path(c), class: "btn btn-warning" %> 
 							<%= link_to 'X', c, method: :delete, class: "btn btn-danger"%> </td>
 				</tr>
 
 		<% end %>
 		</tbody>
 	</table>
-
+</div>
 </body>
