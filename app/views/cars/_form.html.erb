@@ -1,18 +1,21 @@
+<div class="col-md-2">
+
 <%= form_for @car do |f| %>
 
-	Owner: <br>
-	<%= f.text_field :owner %> <br>  <!-- placeholder: current_user.name -->
-	Make: <br>
-	<%= f.text_field :make %> <br>
-	Model: <br>
-	<%= f.text_field :model %> <br>
-	Year: <br>
-	<%= f.number_field :year %> <br>
-	Color: <br>
-	<%= f.text_field :color %> <br>
-	Odometer: <br>
-	<%= f.number_field :odometer %> <br>
-	<br>
-	<%= f.submit 'Add car', class: 'btn btn-primary' %>
+	<strong>Owner: </strong> <br>
+	<%= f.text_field :owner, class: 'form-control' %> <br>  <!-- placeholder: current_user.name -->
+	<strong>Make: </strong><br>
+	<%= f.text_field :make, class: 'form-control' %> <br>
+	<strong>Model: </strong><br>
+	<%= f.text_field :model, class: 'form-control' %> <br>
+	<strong>Year: </strong><br>
+	<%= f.number_field :year, class: 'form-control' %> <br>
+	<strong>Color: </strong><br>
+	<%= f.text_field :color, class: 'form-control' %> <br>
+	<strong>Odometer: </strong><br>
+	<%= f.number_field :odometer, class: 'form-control' %> <br>
+	<%= f.submit 'Add car', class: 'btn btn-primary center-block' %>
 
 	<% end %>
+
+	</div>
