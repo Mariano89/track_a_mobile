@@ -1,34 +1,37 @@
 
+<body>
 
-<h1>Garage</h1>
-<br>
-<h3><%= link_to 'Add New Vehicle', new_car_path %></h3>
-<br>
+	<h1>Garage</h1>
+	<br>
+	<h3><%= link_to 'Add New Vehicle', new_car_path, class: 'btn btn-success' %></h3>
+	<br>
 
-<table class="table">
+	<table class="table table-hover col-md-10">
 
-	<thead>
-		<th> Owner </th>
-		<th> Make </th>
-		<th> Model </th>
-		<th> Year </th>
-		<th> Color </th>
-		<th> Odometer </th>
-	</thead>
+		<thead>
+			<th> Owner </th>
+			<th> Make </th>
+			<th> Model </th>
+			<th> Year </th>
+			<th> Color </th>
+			<th> Odometer </th>
+		</thead>
 
-	<tbody>
-		<% @cars.each do |c| %>
-			<tr>
-				<td><%= c.owner %></td>
-				<td><%= c.make %></td>
-				<td><%= c.model %></td>
-				<td><%= c.year %></td>
-				<td><%= c.color %></td>
-				<td><%= c.odometer %></td>
-				<td><%= link_to 'Edit', edit_car_path(c) %>| 
-						<%= link_to 'X', c, method: :delete %> </td>
-			</tr>
+		<tbody>
+			<% @cars.each do |c| %>
+				<tr>
+					<td><%= c.owner %></td>
+					<td><%= c.make %></td>
+					<td><%= c.model %></td>
+					<td><%= c.year %></td>
+					<td><%= c.color %></td>
+					<td><%= c.odometer %></td>
+					<td><%= link_to 'Edit', edit_car_path(c), class: "btn btn-default" %> 
+							<%= link_to 'X', c, method: :delete, class: "btn btn-danger"%> </td>
+				</tr>
 
-	<% end %>
-	</tbody>
-</table>
+		<% end %>
+		</tbody>
+	</table>
+
+</body>

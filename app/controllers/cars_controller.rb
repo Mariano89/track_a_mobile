@@ -1,5 +1,7 @@
 class CarsController < ApplicationController
 
+	# before_action :authorize
+
 	def index
 		@cars = Car.all
 	end

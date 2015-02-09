@@ -1,7 +1,7 @@
 <%= form_for @car do |f| %>
 
 	Owner: <br>
-	<%= f.text_field :owner, placeholder: current_user.name %> <br>
+	<%= f.text_field :owner %> <br>  <!-- placeholder: current_user.name -->
 	Make: <br>
 	<%= f.text_field :make %> <br>
 	Model: <br>

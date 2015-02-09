@@ -1,14 +1,19 @@
 	<!-- ** Log in new page ** -->
+<body class="index_bg">
 
-<h1>Log in</h1>
+	<div class="log-in-container white-txt">
+		<h1 class="text-center">Log in</h1>
 
-<%= form_for :user, url: '/login' do |f| %>
+		<%= form_for :user, url: '/login' do |f| %>
+		
+			<strong>Email: </strong><br>
+			 <%= f.text_field :email, class: 'form-control' %> <br>
+			<strong>Password: </strong><br>
+			<%= f.password_field :password, class: 'form-control' %> <br>
 
-	Email: <br>
-	 <%= f.text_field :email %> <br>
-	Password: <br>
-	<%= f.password_field :password %> <br>
-	
-	<%= f.submit "Log In" %>
+			<%= f.submit "Log In", class: "btn btn-info center-block" %>
+		
+			<% end %>
+	</div>
 
-	<% end %>
+</body>
